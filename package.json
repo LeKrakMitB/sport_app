@@ -1,0 +1,24 @@
+﻿{
+  "name": "sports-platform",
+  "version": "1.0.0",
+  "description": "Plateforme de mise en relation sports",
+  "scripts": {
+    "setup": "powershell -ExecutionPolicy Bypass -File ./tools/scripts/setup.ps1",
+    "dev": "powershell -ExecutionPolicy Bypass -File ./tools/scripts/dev.ps1",
+    "build": "npm run build:frontend",
+    "build:frontend": "cd frontend && npm run build",
+    "test": "npm run test:frontend && npm run test:backend",
+    "test:frontend": "cd frontend && npm test",
+    "test:backend": "cd backend && python -m pytest",
+    "docker:up": "cd infrastructure/docker && docker-compose up -d",
+    "docker:down": "cd infrastructure/docker && docker-compose down"
+  },
+  "workspaces": [
+    "frontend",
+    "modules/*/database"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
