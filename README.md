@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿# Sports Platform MVP
 
 Plateforme de mise en relation entre pratiquants sportifs et instructeurs freelance.
@@ -43,3 +44,7 @@ Pour les problemes d'execution de scripts PowerShell:
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
+=======
+# sport_app
+Mise en relation de pratiquants et de sportifs
+>>>>>>> 6cb30561a66afb90655a1b930b0c79f2bb7ea64b
